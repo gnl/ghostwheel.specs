@@ -1,0 +1,33 @@
+# ghostwheel.specs
+:linkattrs:
+:toc:
+:toc-placement!:
+:hardbreaks:
+:sectanchors:
+ifdef::env-github[]
+:imagesdir: https://gnl.gitlab.io/images
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+ifndef::env-github[]
+:imagesdir: ../gnl.gitlab.io/public/images
+endif::[]
+
+image:https://img.shields.io/clojars/v/gnl/ghostwheel.specs.svg[link=https://clojars.org/gnl/ghostwheel.specs] image:license.svg[link=https://choosealicense.com/licenses/epl-2.0]
+
+This is a repository for Clojure(-Script) specs written using the link:https://github.com/gnl/ghostwheel/blob/master/README.adoc#the-gspec-syntax[Ghostwheel gspec syntax], including link:https://github.com/gnl/ghostwheel.specs/blob/master/src/ghostwheel/specs/clojure/core.cljc[specs for most of clojure.core].
+
+It's the Clojure version of link:https://github.com/DefinitelyTyped/DefinitelyTyped[Definitely Typed].
+
+NOTE: They can be used for run- and test-time instrumentation with link:https://clojure.org/guides/spec[`clojure.spec`] to easily catch incorrect function calls in your code by requiring the corresponding `ghostwheel.specs.*` namespace and using Ghostwheel's link:https://github.com/gnl/ghostwheel/blob/master/README.adoc#getting-started[extrumentation feature] or just calling `s/instrument` directly.
+
+WARNING: Instrumenting all of `clojure.core` as a whole is not recommended at this point because things will likely break.
+
+PRs are welcome – please add your spec namespaces to the `contrib` package. Their names should correspond to the namespaces they are speccing, so for example `ghostwheel.contrib.cuerdas.core`. If the library works on both Clojure and ClojureScript, make sure your specs do as well.
+
+Copyright (c) 2018 George Lipov +
+Licensed under the link:https://choosealicense.com/licenses/epl-2.0/[Eclipse Public License 2.0]
+
