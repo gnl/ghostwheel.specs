@@ -1,4 +1,4 @@
-(defproject gnl/ghostwheel.specs "0.3.1-SNAPSHOT"
+(defproject gnl/ghostwheel.specs "0.3.1"
   :description "A collection of third-party library specs for Clojure written in Ghostwheel's gspec syntax"
   :url "https://github.com/gnl/ghostwheel.specs"
   :scm {:name "git"
