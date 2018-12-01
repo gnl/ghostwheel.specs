@@ -28,6 +28,8 @@ WARNING: Instrumenting all of `clojure.core` as a whole is not recommended at th
 
 PRs are welcome – please add your spec namespaces to the `contrib` package. Their names should correspond to the namespaces they are speccing, so for example `ghostwheel.contrib.cuerdas.core`. If the library works on both Clojure and ClojureScript, make sure your specs do as well.
 
+Related project: https://github.com/slipset/speculative/
+
 Copyright (c) 2018 George Lipov +
 Licensed under the link:https://choosealicense.com/licenses/epl-2.0/[Eclipse Public License 2.0]
 
